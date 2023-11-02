@@ -57,7 +57,7 @@ export class Highlight {
 
     this._actionPointElement = document.createElement('x-pw-action-point');
     this._actionPointElement.setAttribute('hidden', 'true');
-    this._glassPaneShadow = this._glassPaneElement.attachShadow({ mode: this._isUnderTest ? 'open' : 'closed' });
+    this._glassPaneShadow = this._glassPaneElement.attachShadow({ mode: 'open' });
     this._glassPaneShadow.appendChild(this._actionPointElement);
     const styleElement = document.createElement('style');
     styleElement.textContent = `
